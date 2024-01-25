@@ -1,0 +1,87 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(rgb(163, 172, 172), transparent), linear-gradient(-45deg, magenta, transparent), linear-gradient(45deg, yellow, transparent);
+  margin: 0;
+  padding: 0;
+}
+
+.product-container {
+  max-width: 600px;
+  margin: 50px auto;
+  background-color: rgba(74, 32, 113, 0.133); 
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.variant-options {
+  margin-bottom: 20px;
+}
+
+.variant-option {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.product-image {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+select {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: #2932;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.displaylabel {
+  display: inline-block;
+  margin-right: 5px; 
+}
+
+.variants-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.variants-container-appended {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.element {
+  display: flex;
+  margin: 10px;
+}
+
+.element input,
+.element button {
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+.element label {
+  display: flex;
+  margin-right: 15px;
+}

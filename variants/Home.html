@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Variant Page</title>
+  <script src="jquery.js"></script>
+  <script src="home.js"></script>
+  <link rel="stylesheet" href="home.css">
+</head>
+<body>
+  <div class="product-container">
+    <h1>Product Details</h1>
+
+    <div class="form-group">
+      <label for="productName">Product Name:</label>
+      <input type="text" id="productName" name="productName">
+    </div>
+
+    <div class="form-group">
+      <label for="productDescription">Product Description:</label>
+      <textarea id="productDescription" name="productDescription" rows="4"></textarea>
+    </div>
+
+    <div class="form-group">
+      <label for="hasVariants" class="displaylabel">This product has options like size or color:</label>
+       <input type="checkbox" id="hasVariants" name="hasVariants" class="displaylabel">   
+    </div>
+    <div class="variant-options" hidden id="variant-options-div">
+      <div class="variant-option">
+        <label for="size">Option Name:</label>
+        <select id="variant-types" name="size">
+         <option value="select-size">Select</option>
+         <option value="color">Color</option>
+          <option value="size">Size</option>
+        </select>
+      </div>
+
+      <div class="variant-option-colors" hidden>
+        <label for="color">Colors (Select Multiple)</label>
+        <select id="color" name="color" multiple>
+          <option value="red">Red</option>
+          <option value="blue">Blue</option>
+          <option value="green">Green</option>
+          <option value="white">White</option>
+          <option value="grey">Grey</option>
+        </select>
+      </div>
+      <div class="variant-option-sizes" hidden>
+        <label for="sizes">Sizes (Select Multiple )</label>
+        <select id="sizes" name="sizes" multiple>
+          <option value="small">Small</option>
+          <option value="medium">Medium</option>
+          <option value="large">Large</option>
+          <option value="x-large">Extra Large</option>
+        </select>
+      </div>
+      <div class="container">
+        <button id="done-btn" type="button">Done</button>
+      </div>
+      <div class="variants-container" hidden>
+        <div class="element">
+           <label>Variant</label>
+           <label>Price</label>
+           <label>Quantity</label>
+           <label>SKU</label>
+      </div>
+      </div>
+    </div>
+    <div class="variants-container-appended" hidden>
+    </div>
+
+    <div class="container">
+      <button id="done-btn" type="button">Submit</button>
+      </div>
+  </div>
+  </div>  
+  </div>
+  </div>
+</body>
+</html>
